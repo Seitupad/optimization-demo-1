@@ -107,14 +107,14 @@ const cart = () => {
             : cart[positionProductInCart].quantity + 1;
         setProductInCart(idProduct, quantity);
         break;
-      // case buttonClick.classList.contains("minus"):
-      //   quantity = cart[positionProductInCart].quantity - 1;
-      //   setProductInCart(idProduct, quantity);
-      //   break;
-      // case buttonClick.classList.contains("plus"):
-      //   quantity = cart[positionProductInCart].quantity + 1;
-      //   setProductInCart(idProduct, quantity);
-      //   break;
+      case buttonClick.classList.contains("minus"):
+        quantity = cart[positionProductInCart].quantity - 1;
+        setProductInCart(idProduct, quantity);
+        break;
+      case buttonClick.classList.contains("plus"):
+        quantity = cart[positionProductInCart].quantity + 1;
+        setProductInCart(idProduct, quantity);
+        break;
       default:
         break;
     }
